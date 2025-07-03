@@ -56,5 +56,23 @@ namespace DeberInteractivo
             FrmFloodFill frm = FrmFloodFill.GetInstance();
             FrmLoad(frm);
         }
+
+        private void recorteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSutherland frm = FrmSutherland.GetInstance();
+            FrmLoad(frm);
+        }
+
+        private void bezielToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBezier frm = FrmBezier.GetInstance();
+            FrmLoad(frm);
+        }
+
+        private void bSplinesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBSpline frm = FrmBSpline.GetInstance();
+            FrmLoad(frm);
+        }
     }
 }

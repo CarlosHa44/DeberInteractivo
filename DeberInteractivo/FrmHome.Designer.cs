@@ -36,6 +36,8 @@
             this.rellenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recorteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parametricasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bezielToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bSplinesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,14 +78,14 @@
             // circuloToolStripMenuItem
             // 
             this.circuloToolStripMenuItem.Name = "circuloToolStripMenuItem";
-            this.circuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.circuloToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.circuloToolStripMenuItem.Text = "Circulo";
             this.circuloToolStripMenuItem.Click += new System.EventHandler(this.circuloToolStripMenuItem_Click);
             // 
             // elipseToolStripMenuItem
             // 
             this.elipseToolStripMenuItem.Name = "elipseToolStripMenuItem";
-            this.elipseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.elipseToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.elipseToolStripMenuItem.Text = "Elipse";
             this.elipseToolStripMenuItem.Click += new System.EventHandler(this.elipseToolStripMenuItem_Click);
             // 
@@ -99,12 +101,30 @@
             this.recorteToolStripMenuItem.Name = "recorteToolStripMenuItem";
             this.recorteToolStripMenuItem.Size = new System.Drawing.Size(64, 30);
             this.recorteToolStripMenuItem.Text = "Recorte";
+            this.recorteToolStripMenuItem.Click += new System.EventHandler(this.recorteToolStripMenuItem_Click);
             // 
             // parametricasToolStripMenuItem
             // 
+            this.parametricasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bezielToolStripMenuItem,
+            this.bSplinesToolStripMenuItem});
             this.parametricasToolStripMenuItem.Name = "parametricasToolStripMenuItem";
             this.parametricasToolStripMenuItem.Size = new System.Drawing.Size(91, 30);
             this.parametricasToolStripMenuItem.Text = "Parametricas";
+            // 
+            // bezielToolStripMenuItem
+            // 
+            this.bezielToolStripMenuItem.Name = "bezielToolStripMenuItem";
+            this.bezielToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bezielToolStripMenuItem.Text = "Beziel";
+            this.bezielToolStripMenuItem.Click += new System.EventHandler(this.bezielToolStripMenuItem_Click);
+            // 
+            // bSplinesToolStripMenuItem
+            // 
+            this.bSplinesToolStripMenuItem.Name = "bSplinesToolStripMenuItem";
+            this.bSplinesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bSplinesToolStripMenuItem.Text = "BSplines";
+            this.bSplinesToolStripMenuItem.Click += new System.EventHandler(this.bSplinesToolStripMenuItem_Click);
             // 
             // FrmHome
             // 
@@ -133,5 +153,7 @@
         private System.Windows.Forms.ToolStripMenuItem rellenoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recorteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem parametricasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bezielToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bSplinesToolStripMenuItem;
     }
 }
